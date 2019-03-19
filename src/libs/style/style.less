@@ -1,4 +1,9 @@
+
+@import './theme.less';
+
 /********************************** flex布局 *********************************/
+
+
 .flex {
   display: flex;
 }
@@ -8,17 +13,20 @@
 .flex-align-center {
   align-items: center;
 }
+
+
 /********************************** 手机端1像素边框 *********************************/
-[class*=border-mobile] {
+
+[class*=border-mobile]{
   position: relative;
 }
-[class*=border-mobile]:after {
+[class*=border-mobile]:after{
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 400%;
-  height: 400%;
+  height: 400%; 
   -webkit-transform: scale(0.25);
   transform: scale(0.25);
   -webkit-transform-origin: 0 0;
@@ -27,25 +35,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.border-mobile:after {
-  border: 1px solid #999;
-}
-.border-mobile--bm:after {
-  border-bottom: 1px solid #999;
-}
-.border-mobile--tp:after {
-  border-top: 1px solid #999;
-}
-.border-mobile--lt:after {
-  border-left: 1px solid #999;
-}
-.border-mobile--rt:after {
-  border-right: 1px solid #999;
-}
-.border-mobile--ud:after {
-  border-bottom: 1px solid #999;
-  border-top: 1px solid #999;
-}
-.border-mobile--dashed:after {
-  border-style: dashed;
-}
+.border-mobile:after{  border: 1px solid @color-line;   }
+.border-mobile--bm:after{  border-bottom:1px solid @color-line;  }
+.border-mobile--tp:after{  border-top:1px solid @color-line;  }
+.border-mobile--lt:after{  border-left:1px solid @color-line;  }
+.border-mobile--rt:after{  border-right:1px solid @color-line;  }
+.border-mobile--ud:after{  border-bottom:1px solid @color-line; border-top:1px solid @color-line; }
+.border-mobile--dashed:after{  border-style: dashed;  }
