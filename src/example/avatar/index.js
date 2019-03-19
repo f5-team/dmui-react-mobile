@@ -43,6 +43,15 @@ class avatar extends Component {
                 <div>
                     <Avatar size="large" src={src} ></Avatar>
                 </div>
+
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <p>Avatar组件：可配属项：</p>
+                <ul>
+                    <li>src: （string）图片地址， 默认："".</li>
+                    <li>size: (string) 大小设置(large/normal/small/smaller)， 默认：normal.</li>
+                    <li>type: (string) 圆角类型(round/square/"")， 默认："".</li>
+                </ul>
                 
             </div>
             
