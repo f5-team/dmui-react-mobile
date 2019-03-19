@@ -17,7 +17,7 @@ import './index.css'
 class List extends React.Component {
 
     getListStyle= ()=> {
-        let style= 'dmui-list flex flex-pack-justify flex-align-center';
+        let style= 'dmui-list flex flex-pack-justify flex-align-center border-mobile--bm';
         if(this.props.disable){
             style+= ' disable'
         }
