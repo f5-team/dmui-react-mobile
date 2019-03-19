@@ -58,6 +58,12 @@ class Layout extends React.Component {
                     <Col span={9} offset={8}><div className="col-cont">9 offset-8</div></Col>
                 </Row>
 
+                <div>around:</div>
+                <Row pack={'around'}>
+                    <Col span={4}><div className="col-cont">4</div></Col>
+                    <Col span={4}><div className="col-cont">4</div></Col>
+                </Row>
+
                 <div>&nbsp;</div>
                 <div>&nbsp;</div>
                 <p>Row组件：可配属性：</p>
