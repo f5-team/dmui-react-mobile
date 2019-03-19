@@ -1,0 +1,72 @@
+.dmui-col-1 {
+  width: 4.16666667%;
+}
+.dmui-col-2 {
+  width: 8.33333333%;
+}
+.dmui-col-3 {
+  width: 12.5%;
+}
+.dmui-col-4 {
+  width: 16.66666667%;
+}
+.dmui-col-5 {
+  width: 20.83333333%;
+}
+.dmui-col-6 {
+  width: 25%;
+}
+.dmui-col-7 {
+  width: 29.16666667%;
+}
+.dmui-col-8 {
+  width: 33.33333333%;
+}
+.dmui-col-9 {
+  width: 37.5%;
+}
+.dmui-col-10 {
+  width: 41.66666667%;
+}
+.dmui-col-11 {
+  width: 45.83333333%;
+}
+.dmui-col-12 {
+  width: 50%;
+}
+.dmui-col-13 {
+  width: 54.16666667%;
+}
+.dmui-col-14 {
+  width: 58.33333333%;
+}
+.dmui-col-15 {
+  width: 62.5%;
+}
+.dmui-col-16 {
+  width: 66.66666667%;
+}
+.dmui-col-17 {
+  width: 70.83333333%;
+}
+.dmui-col-18 {
+  width: 75%;
+}
+.dmui-col-19 {
+  width: 79.16666667%;
+}
+.dmui-col-20 {
+  width: 83.33333333%;
+}
+.dmui-col-21 {
+  width: 87.5%;
+}
+.dmui-col-22 {
+  width: 91.66666667%;
+}
+.dmui-col-23 {
+  width: 95.83333333%;
+}
+.dmui-col-24 {
+  width: 100%;
+}
