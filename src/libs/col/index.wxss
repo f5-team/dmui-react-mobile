@@ -1,3 +1,6 @@
+[class^='dmui-col-'] {
+  box-sizing: border-box;
+}
 .dmui-col-1 {
   width: 4.16666667%;
 }

@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-19 13:58:22
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-19 18:01:05
+ * @Last Modified time: 2019-03-19 20:43:28
  * summary: row: 布局组件
  */
 
@@ -12,23 +12,27 @@ import Slot from '../slot/index';
 
 class Row extends Component {
   getRowClassname = () => {
-    const { type, pack, align } = this.props;
+    const { type, pack, align, flexV } = this.props;
+
     if (type === 'flex') {
       return `dmui-row ${type}${pack ? ` flex-pack-${pack}` : ''}${
         align ? ` flex-align-${align}` : ''
-      }`;
+      }${flexV ? ' flex-v' : ''}`;
     }
+
     return `dmui-row ${type}`;
   };
 
   getStyle = () => {
     const { gutter } = this.props;
+
     if (gutter > 0) {
       return {
         marginLeft: `-${gutter / 2}px`,
         marginRight: `-${gutter / 2}px`,
       };
     }
+
     return {};
   };
 

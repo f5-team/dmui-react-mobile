@@ -12,7 +12,7 @@ class Avatar extends React.Component {
     if (this.props.width && this.props.height) {
       return {
         width: `${this.props.width}rem`,
-        height: `${this.props.type}rem;`,
+        height: `${this.props.height}rem`,
       };
     }
     return {};
@@ -30,7 +30,9 @@ Avatar.defaultProps = {
   size: 'normal',
   // type: round square
   type: '',
+  // 0表示不自定义设置宽度
   width: 0,
+  // 0表示不自定义设置高度
   height: 0,
   src: '',
 };
