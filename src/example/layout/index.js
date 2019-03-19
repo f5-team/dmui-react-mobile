@@ -62,18 +62,18 @@ class Layout extends React.Component {
                 <div>&nbsp;</div>
                 <p>Row组件：可配属性：</p>
                 <ul>
-                    <li>type: 布局类型（flex和grad布局）， 默认：flex.</li>
-                    <li>flexV: flex布局下是否垂直布局（true/false）， 默认：false.</li>
-                    <li>pack: flex布局下子元素水平对其方式(start/center/end/around/between)， 默认：start.</li>
-                    <li>align: flex布局下子元素垂直对其方式(start/center/end)， 默认：start.</li>
-                    <li>gutter: 子组件Col相邻间隔间距（单位px）， 默认：8.</li>
+                    <li>type: （string）布局类型（flex和grad布局）， 默认：flex.</li>
+                    <li>flexV: （boolean）flex布局下是否垂直布局（true/false）， 默认：false.</li>
+                    <li>pack: (string) flex布局下子元素水平对其方式(start/center/end/around/between)， 默认：start.</li>
+                    <li>align: (string) flex布局下子元素垂直对其方式(start/center/end)， 默认：start.</li>
+                    <li>gutter: (number) 子组件Col相邻间隔间距（单位px）， 默认：8.</li>
                 </ul>
 
                 <div>&nbsp;</div>
                 <p>Col组件：可配属性：</p>
                 <ul>
-                    <li>gutter: 组件相邻间隔间距（单位px）， 默认：8.</li>
-                    <li>span: 元素所占列数，总共24列， 默认：6.</li>
+                    <li>gutter: (number) 组件相邻间隔间距（单位px）， 默认：8.</li>
+                    <li>span: (number) 元素所占列数，总共24列， 默认：6.</li>
                 </ul>
 
             </div>
