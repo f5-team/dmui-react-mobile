@@ -6,6 +6,7 @@ import Nav from "./../nav/index"
 import List from "./../list/index"
 import ListGroup from "./../list-group/index"
 import avatar from "./../avatar/index"
+import Layout from "./../layout/index"
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
                 <Route path="/list" component={List}/>
                 <Route path="/list-group" component={ListGroup}/>
                 <Route path="/avatar" component={avatar}/>
+                <Route path="/layout" component={Layout}/>
             </Switch>
            
         </HashRouter>
