@@ -2,3 +2,9 @@
     background: #eee;
     text-align: center;
 }
+ul{
+    padding-left: 1rem;
+}
+li{
+    padding: .3rem 0;
+}

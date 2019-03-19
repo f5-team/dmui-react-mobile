@@ -2,7 +2,7 @@
  * @Author: denghuaicheng 
  * @Date: 2019-03-19 13:58:22 
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-19 16:41:38
+ * @Last Modified time: 2019-03-19 18:01:05
  * summary: row: 布局组件
  */
 
@@ -51,7 +51,7 @@ Row.defaultProps= {
     //flex布局下垂直对其方式: start center end
     align: "",
     //子元素相邻间隔间距，单位px
-    gutter: 4
+    gutter: 8
 };
 
 Row.propTypes= {
