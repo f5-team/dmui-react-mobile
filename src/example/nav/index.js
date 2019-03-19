@@ -8,6 +8,9 @@ const Nav = () => (
     <List>
       <a href="#/layout">layout</a>
     </List>
+    <List>
+      <a href="#/tabbar">tabbar</a>
+    </List>
 
     <h3>数据展示</h3>
     <List>
