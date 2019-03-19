@@ -1,0 +1,28 @@
+.dmui-avatar{
+    display: inline-block;
+    border-radius: .2rem;
+}
+
+.dmui-avatar.round{
+    border-radius: 100%;
+}
+.dmui-avatar.square{
+    border-radius: 0;
+}
+
+.dmui-avatar.large{
+    width: 5rem;
+    height: 5rem;
+}
+.dmui-avatar.normal{
+    width: 4rem;
+    height: 4rem;
+}
+.dmui-avatar.small{
+    width: 3rem;
+    height: 3rem;
+}
+.dmui-avatar.smaller{
+    width: 2rem;
+    height: 2rem;
+}

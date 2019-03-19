@@ -1,0 +1,18 @@
+.dmui-list {
+    padding: .8rem 0;
+    position: relative;
+}
+
+.dmui-list::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgb(224,224,224);
+}
+
+.disable{
+    color: rgb(188,188,188);
+}

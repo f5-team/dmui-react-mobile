@@ -1,0 +1,28 @@
+.dmui-group-list{
+    padding-left: .8rem;
+    position: relative;
+}
+.dmui-group-list .dmui-list:last-child::before{
+    border-bottom: none;
+}
+.dmui-group-list ~ .dmui-group-list{
+    margin-top: 1rem;
+}
+.dmui-group-list::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top: 1px solid rgb(212,212,212);
+}
+.dmui-group-list::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgb(212,212,212);
+}
