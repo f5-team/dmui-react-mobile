@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-router": "^4.4.0",
+    "react-router": "^4.3.1",
     "react-scripts": "2.1.8"
   },
   "scripts": {
@@ -24,6 +24,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "react-router-dom": "^4.4.0"
+    "react-router-dom": "^4.3.1"
   }
 }
