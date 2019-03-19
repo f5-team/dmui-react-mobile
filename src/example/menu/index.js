@@ -13,7 +13,8 @@ class App extends Component {
     return (
       <div className="demo">
 
-        <h2><span className="logo">DMUI</span> 基于react的移动端ui组件库</h2>
+        <h2><span className="logo">DMUI</span>-react-moblie</h2>
+        <h3>基于creat-react-app的移动端ui组件库</h3>
         
         <HashRouter >
             
