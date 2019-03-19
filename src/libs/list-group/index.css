@@ -2,8 +2,9 @@
     padding-left: .8rem;
     position: relative;
 }
+.dmui-group-list .border-mobile--bm:last-child::after,
 .dmui-group-list .dmui-list:last-child::before{
-    border-bottom: none;
+    display: none;
 }
 .dmui-group-list ~ .dmui-group-list{
     margin-top: 1rem;
