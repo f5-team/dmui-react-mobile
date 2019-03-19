@@ -51,6 +51,8 @@ class avatar extends Component {
                     <li>src: （string）图片地址， 默认："".</li>
                     <li>size: (string) 大小设置(large/normal/small/smaller)， 默认：normal.</li>
                     <li>type: (string) 圆角类型(round/square/"")， 默认："".</li>
+                    <li>width: (number) 自定义图片宽度， 默认：0，表示不自定义设置.</li>
+                    <li>height: (number) 自定义图片高度， 默认：0，表示不自定义设置.</li>
                 </ul>
                 
             </div>
