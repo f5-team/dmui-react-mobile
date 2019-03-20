@@ -3,6 +3,8 @@ build/
 
 # dependencies
 node_modules/
+.idea/
+
 
 # misc
 *error.log
