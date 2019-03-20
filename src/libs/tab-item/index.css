@@ -1,0 +1,20 @@
+.dmui-tab__item {
+  height: 44px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30%;
+  line-height: 44px;
+  text-align: center;
+  padding: 0 10px;
+}
+.dmui-tab__item.is-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dmui-tab__item--label {
+  line-height: inherit;
+}
+.dmui-tab__item--label.is-active {
+  color: #1890ff;
+}
