@@ -7,11 +7,8 @@ const Nav = () => (
     <h3>布局组件</h3>
     <List>
       <a href="#/layout">layout</a>
-    </List> 
-    <h3>导航</h3> 
-    <List>
-      <a href="#/tab">tab</a>
     </List>
+
     <h3>数据展示</h3>
     <List>
       <a href="#/list">list</a>
@@ -21,6 +18,9 @@ const Nav = () => (
     </List>
     <List>
       <a href="#/avatar">avatar</a>
+    </List>
+    <List>
+      <a href="#/noticeBar">noticeBar</a>
     </List>
   </div>
 );

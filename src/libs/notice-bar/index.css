@@ -1,0 +1,64 @@
+.dmui-notice-bar{
+    background: #fffbe8;
+    color: #ed6a0c;
+    padding: .5rem 0;
+    overflow: hidden;
+    position: relative;
+}
+.dmui-notice-content{
+    white-space:nowrap;
+    width: unset;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+@keyframes run {
+    from {
+        transform: translate3d(0, 0, 0)
+    }
+    to{
+        transform: translate3d(-100%, 0, 0)
+    }
+}
+
+.run{
+    animation: run linear infinite;
+}
+.no-run{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.close-icon{
+    position: absolute;
+    right: 0;
+    top:  0;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: .4rem;
+    background: #fffbe8;
+    z-index: 1;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.left-icon{
+    position: absolute;
+    left: 0;
+    top:  0;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: .4rem;
+    background: #fffbe8;
+    z-index: 1;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.has-icon-left{
+    padding-left: 28px;
+}
+.has-icon-right{
+    padding-right: 30px;
+}
