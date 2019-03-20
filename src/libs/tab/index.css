@@ -1,0 +1,27 @@
+.dmui-tab {
+  position: relative;
+  padding-top: 44px;
+}
+.dmui-tab__wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.dmui-tab__wrap {
+  display: flex;
+}
+.dmui-tab__line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: #1890ff;
+  transition-duration: 0.3s;
+}
+.dmui-tab__wrap.dmui-tab__wrap--scroll {
+  overflow-x: scroll;
+}

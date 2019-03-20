@@ -9,7 +9,7 @@ import avatar from '../avatar/index';
 import Layout from '../layout/index';
 
 //made in huangjunquan 
-import Tabbar from '../tabbar/index';
+import Tab from '../tab/index';
 
 const App = () => (
   <div className="demo">
@@ -25,7 +25,7 @@ const App = () => (
         <Route path="/list-group" component={ListGroup} />
         <Route path="/avatar" component={avatar} />
         <Route path="/layout" component={Layout} />
-        <Route path="/tabbar" component={Tabbar} />
+        <Route path="/tab" component={Tab} />
       </Switch>
     </HashRouter>
   </div>
