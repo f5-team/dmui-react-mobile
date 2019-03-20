@@ -7,6 +7,7 @@ import List from '../list/index';
 import ListGroup from '../list-group/index';
 import avatar from '../avatar/index';
 import Layout from '../layout/index';
+import noticeBar from "../notice-bar/index";
 
 const App = () => (
   <div className="demo">
@@ -22,6 +23,7 @@ const App = () => (
         <Route path="/list-group" component={ListGroup} />
         <Route path="/avatar" component={avatar} />
         <Route path="/layout" component={Layout} />
+        <Route path="/noticeBar" component={noticeBar} />
       </Switch>
     </HashRouter>
   </div>

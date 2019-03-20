@@ -1,3 +1,11 @@
+/*
+ * @Author: denghuaicheng
+ * @Date: 2019-03-19 13:58:22
+ * @Last Modified by: denghuaicheng
+ * @Last Modified time: 2019-03-19 22:41:20
+ * summary: avatar: 头像组件
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 

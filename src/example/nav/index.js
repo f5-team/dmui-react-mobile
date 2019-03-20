@@ -19,6 +19,9 @@ const Nav = () => (
     <List>
       <a href="#/avatar">avatar</a>
     </List>
+    <List>
+      <a href="#/noticeBar">noticeBar</a>
+    </List>
   </div>
 );
 
