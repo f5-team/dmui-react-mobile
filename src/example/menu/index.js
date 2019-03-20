@@ -9,6 +9,9 @@ import avatar from '../avatar/index';
 import Layout from '../layout/index';
 import noticeBar from "../notice-bar/index";
 
+//made in huangjunquan
+import Tab from '../tab/index';
+
 const App = () => (
   <div className="demo">
     <h2>
@@ -24,6 +27,9 @@ const App = () => (
         <Route path="/avatar" component={avatar} />
         <Route path="/layout" component={Layout} />
         <Route path="/noticeBar" component={noticeBar} />
+
+        <Route path="/tab" component={Tab} />
+
       </Switch>
     </HashRouter>
   </div>
