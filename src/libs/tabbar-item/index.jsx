@@ -15,8 +15,7 @@ class TabbarItem extends Component {
     return className
   }
 
-  render() {
-    console.log(this.props)
+  render() { 
     let { children,icon ,label } = this.props
     return (
       <div onClick={ this.handler() } className = { this.getItemClassName() }>
