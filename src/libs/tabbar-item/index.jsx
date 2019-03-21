@@ -14,13 +14,8 @@ class TabbarItem extends Component {
     if( name === active ) className += 'is-active '
     return className
   }
-
-<<<<<<< HEAD
-  render() {
-    console.log(this.props)
-=======
-  render() { 
->>>>>>> huangjunquan
+ 
+  render() {  
     let { children,icon ,label } = this.props
     return (
       <div onClick={ this.handler() } className = { this.getItemClassName() }>
