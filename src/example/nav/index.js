@@ -25,6 +25,12 @@ const Nav = () => (
     <List>
       <a href="#/noticeBar">noticeBar</a>
     </List>
+    <List>
+      <a href="#/money">money</a>
+    </List>
+    <List>
+      <a href="#/image">image</a>
+    </List>
   </div>
 );
 

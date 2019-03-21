@@ -1,0 +1,24 @@
+.dmui-money {
+  display: inline-block;
+  padding: 0 2px;
+  color: orange;
+}
+.dmui-money.lang-ch::before {
+  content: "¥";
+  display: inline-block;
+  transform: scale(0.85);
+  transform-origin: 50% 70%;
+  padding-right: 2px;
+}
+.dmui-money.disable {
+  color: #cdcdcd;
+  position: relative;
+}
+.dmui-money.disable::after {
+  position: absolute;
+  left: 0;
+  top: 57%;
+  border-top: 1px solid #bbb;
+  width: 100%;
+  content: "";
+}
