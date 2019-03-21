@@ -12,12 +12,14 @@ class image extends Component {
                     <Image src="http://img1.imgtn.bdimg.com/it/u=2735633715,2749454924&fm=26&gp=0.jpg"></Image>
                 </div>
                 <br></br>
+                round
                 <div>
                     <Image shape="round" src="http://img5.imgtn.bdimg.com/it/u=4060543606,3642835235&fm=26&gp=0.jpg"></Image>
                 </div>
                 <br></br>
+                square
                 <div>
-                    <Image shape="square" src="http://img5.imgtn.bdimg.com/it/u=3817824897,1768495848&fm=26&gp=0.jpg"></Image>
+                    <Image shape="square" src="http://img2.imgtn.bdimg.com/it/u=1922311540,520041574&fm=26&gp=0.jpg"></Image>
                 </div>
                 <br></br>
                 <div>
@@ -37,6 +39,7 @@ class image extends Component {
                     <Image src="http://img2.imgtn.bdimg.com/it/u=620919022,129761896&fm=26&gp=0.jpg"></Image>
                 </div>
                 <br></br>
+                error
                 <div>
                     <Image src="http://img2.imgtn.bdimg.com/i"></Image>
                 </div>
