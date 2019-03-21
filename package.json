@@ -70,7 +70,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "commitizen": "^3.0.7",
