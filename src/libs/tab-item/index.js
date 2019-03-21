@@ -21,11 +21,19 @@ export default class TabItem extends React.Component{
     return className
   }
     
+  getItemClassName = () =>{
+    let {justify,ellipsis } = this.props
+    let className = 'dmui-tab__item ';
+    if(ellipsis && justify === 'center'  ) className += 'is-ellipsis ';
+    if(justify === 'start')  className += 'is-start ';
+    if(justify === 'end')  className += 'is-end ';
+    return className
+  }
   render(){  
     let {  name,onChange,index } = this.props
     return ( 
-       <div className='dmui-tab__item is-ellipsis ' onClick={ ()=>{ onChange(name,index)  } } >
-        <span className={this.getLabelClassName()} >
+       <div className={ this.getItemClassName() } onClick={ ()=>{ onChange(name,index)  } } >
+        <span className={ this.getLabelClassName()} >
           { name }
         </span> 
        </div>

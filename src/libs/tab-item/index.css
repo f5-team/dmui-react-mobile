@@ -1,11 +1,16 @@
 .dmui-tab__item {
   height: 44px;
   flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 30%;
+  flex-shrink: 0;
+  flex-basis: 0%;
   line-height: 44px;
   text-align: center;
   padding: 0 10px;
+}
+.dmui-tab__item.is-start,
+.dmui-tab__item.is-end {
+  flex-grow: 0;
+  flex-basis: auto;
 }
 .dmui-tab__item.is-ellipsis {
   white-space: nowrap;
