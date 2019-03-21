@@ -14,7 +14,7 @@ class TagExample extends Component {
 
         </div>
 
-        <div  style={{ 'margin-top':'40px'}}>
+        <div  style={{ 'marginTop':'40px'}}>
           <p>Tag组件：可配属项：</p>
           <ul>
             <li>label: （string）提示信息</li> 
