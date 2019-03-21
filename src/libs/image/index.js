@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-18 16:13:52
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-21 18:41:54
+ * @Last Modified time: 2019-03-21 19:54:17
  * @summary: 数据暂示，image
  */
 
@@ -19,7 +19,6 @@ class Image extends Component {
             _src: null,
             _error: null
         }
-        this.offListener.bind(this);
     }
 
     componentDidMount(){
@@ -30,7 +29,7 @@ class Image extends Component {
         // 懒加载 之 IntersectionObserver
         else if(!IntersectionObserver){
             this.loadType= 1;
-            this.useIntersectionObserver.bind(this)();
+            this.useIntersectionObserver();
         }
         // 懒加载 之 兼容写法: 移动端
         else if("ontouchstart" in window){
