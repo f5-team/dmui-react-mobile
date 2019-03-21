@@ -1,5 +1,6 @@
 import React from 'react';
-import List from '../../libs/list/index';
+
+import { List } from '../../libs';
 
 const componentName = () => (
   <div className="demo">

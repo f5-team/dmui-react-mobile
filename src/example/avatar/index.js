@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Avatar from '../../libs/avatar/index';
+import { Avatar } from '../../libs';
 
 class avatar extends Component {
   constructor() {
