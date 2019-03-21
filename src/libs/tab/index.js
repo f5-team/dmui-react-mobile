@@ -7,7 +7,7 @@ import TabItem from '../tab-item';
 export default class Tab extends React.Component{
   constructor(props){
     super(props)
-    console.log(props)
+    //console.log(props)
   }
   state = { 
     lineStyle:{}
@@ -77,11 +77,11 @@ export default class Tab extends React.Component{
 
   getWrapClassName = () =>{
     let {  justify } = this.props;
-    console.log(this.props)
+    //console.log(this.props)
     let className = 'dmui-tab__wrap ';
     if(justify === 'start') className += 'is-start '
     if(justify === 'end') className += 'is-end '
-    console.log(className)
+    //console.log(className)
     return className
   }
 
