@@ -12,6 +12,12 @@ const Nav = () => (
     <List>
       <a href="#/tab">tab</a>
     </List>
+    <List>
+      <a href="#/tabbar">tabbar</a>
+    </List>
+    <List>
+      <a href="#/tag">tag</a>
+    </List>
     <h3>数据展示</h3>
     <List>
       <a href="#/list">list</a>

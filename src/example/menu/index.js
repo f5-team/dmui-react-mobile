@@ -11,6 +11,8 @@ import noticeBar from "../notice-bar/index";
 
 //made in huangjunquan
 import Tab from '../tab/index';
+import Tabbar from '../tabbar/index';
+import Tag from '../tag/index';
 
 const App = () => (
   <div className="demo">
@@ -29,6 +31,8 @@ const App = () => (
         <Route path="/noticeBar" component={noticeBar} />
 
         <Route path="/tab" component={Tab} />
+        <Route path="/tabbar" component={Tabbar} />
+        <Route path="/tag" component={Tag} />
 
       </Switch>
     </HashRouter>

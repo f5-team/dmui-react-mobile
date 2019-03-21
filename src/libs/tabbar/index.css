@@ -1,0 +1,41 @@
+.dmui-tabbar {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  background: #fff;
+}
+.dmui-tabbar.is-normal {
+  height: 50px;
+}
+.dmui-tabbar.is-top,
+.dmui-tabbar.is-left,
+.dmui-tabbar.is-bottom,
+.dmui-tabbar.is-right {
+  position: fixed;
+}
+.dmui-tabbar.is-top {
+  left: 0;
+  top: 0;
+  height: 50px;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.dmui-tabbar.is-bottom {
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  box-shadow: 0px -3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.dmui-tabbar.is-left {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50px;
+  box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+.dmui-tabbar.is-right {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50px;
+  box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,28 @@
+@import '../style/theme.less';
+
+.dmui-tabbar__item{
+  flex: 1;
+  line-height: 1;
+  color: @color-text-dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.dmui-tabbar__item.is-active{
+  color:@color-pramiry
+}
+
+.dmui-tabbar__icon{
+  font-size: 18px;
+  color: inherit;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.dmui-tabbar__label{
+  font-size: 14px;
+  color: inherit;
+}

@@ -7,7 +7,7 @@ import TabItem from '../tab-item';
 export default class Tab extends React.Component{
   constructor(props){
     super(props)
-    console.log(props)
+    //console.log(props)
   }
   state = { 
     lineStyle:{}
@@ -17,7 +17,7 @@ export default class Tab extends React.Component{
     setTimeout(()=>{
        this.setLinePos(index);
        this.props.onChange(name)
-    },100) 
+    },200) 
 
   }
 
@@ -56,12 +56,9 @@ export default class Tab extends React.Component{
         }
       })
     }
-    
-
-
+     
   }
-
-
+ 
   componentDidMount = ()=>{
     this.wrapWidth = this.wrap.offsetWidth ;
     this.wrapChildNodes = [] 
@@ -77,12 +74,23 @@ export default class Tab extends React.Component{
       }
     } 
   } 
+
+  getWrapClassName = () =>{
+    let {  justify } = this.props;
+    //console.log(this.props)
+    let className = 'dmui-tab__wrap ';
+    if(justify === 'start') className += 'is-start '
+    if(justify === 'end') className += 'is-end '
+    //console.log(className)
+    return className
+  }
+
   render(){  
-    let { children } = this.props;
+    let { children,active,justify,ellipsis } = this.props;
     this.tabs = []; // 保存起来后续需要使用 
     return (
        <div className='dmui-tab'>
-          <div className='dmui-tab__wrap' ref={ ( wrap) => { this.wrap = wrap }}>
+          <div className={ this.getWrapClassName() } ref={ ( wrap) => { this.wrap = wrap }}>
           { 
             React.Children.map(children,(child,index)=>{
               if(child.type === TabItem ){
@@ -91,8 +99,10 @@ export default class Tab extends React.Component{
 
                 return React.cloneElement(child,{
                 // 把父组件的props.name赋值给每个子组件（父组件传值给子组件）
-                  active: this.props.active,
-                  index:index,
+                  active : active,
+                  index : index,
+                  justify:justify,
+                  ellipsis:ellipsis,
                 // 父组件的方法挂载到props.onClick上，以便子组件内部通过props调用
                   onChange: this.changeTab
                 })
@@ -114,10 +124,12 @@ Tab.defaultProps = {
   onChange:null, 
   active: '', //选中的tab
   lineWidth:false, // 下划线的宽度，文本的宽度 - false ，tabItem的宽度- true,默认false
+  justify:'center' // item的对齐方式 可选 [ 'center','start','end'] ,默认是'center'
 };
 
 Tab.propTypes = { 
   onChange:PropTypes.func,
-  active: PropTypes.string,  
-  lineWidth:PropTypes.bool
+  active: PropTypes.string,
+  lineWidth:PropTypes.bool,
+  justify: PropTypes.string,  
 };

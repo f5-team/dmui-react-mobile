@@ -1,0 +1,18 @@
+.dmui-tag {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 3px;
+  text-align: center;
+  background-color: #f44;
+  min-width: 16px;
+  font-weight: 800;
+  transform: translateX(50%);
+  transform-origin: 100%;
+}

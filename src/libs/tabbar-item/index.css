@@ -1,0 +1,22 @@
+.dmui-tabbar__item {
+  flex: 1;
+  line-height: 1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dmui-tabbar__item.is-active {
+  color: #1890ff;
+}
+.dmui-tabbar__icon {
+  font-size: 18px;
+  color: inherit;
+  margin-bottom: 5px;
+  position: relative;
+}
+.dmui-tabbar__label {
+  font-size: 14px;
+  color: inherit;
+}
