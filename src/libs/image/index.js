@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-18 16:13:52
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-21 19:54:17
+ * @Last Modified time: 2019-03-21 19:57:00
  * @summary: 数据暂示，image
  */
 
@@ -178,7 +178,7 @@ Image.defaultProps = {
     // 是否开启懒加载
     lazyLoad: true,
     // 延迟懒加载时间,单位ms
-    lazyLoadTime: 300,
+    lazyLoadTime: 100,
     // 图片形状 round square
     shape: "",
     // 自定义圆角大小
