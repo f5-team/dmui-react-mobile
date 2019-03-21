@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-18 16:13:52
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-21 18:35:09
+ * @Last Modified time: 2019-03-21 18:41:54
  * @summary: 数据暂示，image
  */
 
@@ -46,6 +46,10 @@ class Image extends Component {
         }
     }
 
+    componentWillMount(){
+        this.offListener();
+    }
+
     //优先使用的实验性方法
     useIntersectionObserver(){
         this.io = new IntersectionObserver( 
@@ -71,7 +75,7 @@ class Image extends Component {
     //兼容写法的监听处理函数
     listenerCall = ()=> {
         return throttle(()=>{
-            if(this.refs.imageBox.getBoundingClientRect().top <= window.innerHeight){
+            if(this.refs.imageBox && this.refs.imageBox.getBoundingClientRect().top <= window.innerHeight){
                 if(this.state._src || this.state._error) return;
                 this.loadImage();
             }
