@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-18 16:13:52
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-21 19:57:00
+ * @Last Modified time: 2019-03-22 06:58:06
  * @summary: 数据暂示，image
  */
 
@@ -27,7 +27,7 @@ class Image extends Component {
             this.loadImage();
         }
         // 懒加载 之 IntersectionObserver
-        else if(!IntersectionObserver){
+        else if(window.IntersectionObserver){
             this.loadType= 1;
             this.useIntersectionObserver();
         }
@@ -51,7 +51,7 @@ class Image extends Component {
 
     //优先使用的实验性方法
     useIntersectionObserver(){
-        this.io = new IntersectionObserver( 
+        this.io = new window.IntersectionObserver( 
             entries => {
                 if(entries[0].isIntersecting) this.loadImage();
             }
