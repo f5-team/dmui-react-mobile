@@ -37,6 +37,9 @@ const Nav = () => (
     <List>
       <a href="#/image">image</a>
     </List>
+    <List>
+      <a href="#/countdown">countdown 倒计时</a>
+    </List>
   </div>
 );
 
