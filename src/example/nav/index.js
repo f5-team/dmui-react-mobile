@@ -40,6 +40,9 @@ const Nav = () => (
     <List>
       <a href="#/countdown">countdown 倒计时</a>
     </List>
+    <List>
+      <a href="#/refresh">refresh 下拉刷新</a>
+    </List>
   </div>
 );
 

@@ -11,6 +11,7 @@ import noticeBar from "../notice-bar/index";
 import Money from "../money/index"
 import image from "../image/index"
 import countdown from "../count-down/index"
+import refresh from "../refresh/index"
 
 //made in huangjunquan
 import Tab from '../tab/index';
@@ -35,6 +36,7 @@ const App = () => (
         <Route path="/money" component={Money} />
         <Route path="/image" component={image} />
         <Route path="/countdown" component={countdown} />
+        <Route path="/refresh" component={refresh} />
 
         <Route path="/tab" component={Tab} />
         <Route path="/tabbar" component={Tabbar} />
