@@ -2,7 +2,7 @@
  * @Author: denghuaicheng 
  * @Date: 2019-03-22 13:31:21 
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-22 15:20:25
+ * @Last Modified time: 2019-03-22 15:32:25
  * 倒计时组件
  */
 
@@ -23,6 +23,13 @@ class CountDown extends React.Component {
 
     componentDidMount(){
         this.init();
+    }
+
+    componentWillUnmount(){
+        if(this.interval){
+            clearInterval(this.interval);
+            this.interval= null;
+        }
     }
 
     getOffset(){

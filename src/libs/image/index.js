@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-18 16:13:52
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-22 09:41:34
+ * @Last Modified time: 2019-03-22 15:33:01
  * @summary: 数据暂示，image
  */
 
@@ -45,7 +45,7 @@ class Image extends Component {
         }
     }
 
-    componentWillMount(){
+    componentWillUnmount(){
         this.offListener();
     }
 
@@ -75,7 +75,7 @@ class Image extends Component {
     listenerCall = ()=> {
         return throttle(()=>{
 
-            if( !this.refs.imageBox || this.state._src || this.state._error ) return this.offListener();
+            if( this.state._src || this.state._error ) return this.offListener();
 
             // 缓存避免下方反复取值而反复重绘 
             let rect= this.refs.imageBox.getBoundingClientRect();
