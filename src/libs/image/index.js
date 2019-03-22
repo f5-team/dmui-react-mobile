@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-18 16:13:52
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-22 06:58:06
+ * @Last Modified time: 2019-03-22 09:41:34
  * @summary: 数据暂示，image
  */
 
@@ -74,15 +74,24 @@ class Image extends Component {
     //兼容写法的监听处理函数
     listenerCall = ()=> {
         return throttle(()=>{
-            if(this.refs.imageBox && this.refs.imageBox.getBoundingClientRect().top <= window.innerHeight){
-                if(this.state._src || this.state._error) return;
+
+            if( !this.refs.imageBox || this.state._src || this.state._error ) return this.offListener();
+
+            // 缓存避免下方反复取值而反复重绘 
+            let rect= this.refs.imageBox.getBoundingClientRect();
+
+            if( rect.top <= window.innerHeight || 
+                rect.left <= window.innerWidth 
+            ){
                 this.loadImage();
             }
+
         }, 300)
     }
 
     //释放监听
     offListener(){
+        //console.log(this.state._src, "释放")
         switch(this.loadType){
 
             case 1 : 
