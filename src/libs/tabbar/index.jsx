@@ -8,11 +8,11 @@ class Tabbar extends Component {
   handler = () => () =>{}
 
   getTabbarClassName = ()=>{
-    let { position } = this.props;
+    let { position ,justify} = this.props;
     let className = 'dmui-tabbar ';
     
-    className += `is-${position}`;
-    
+    className += `is-${position} `;
+    className += `is-${justify}`
     return className
   }
 
@@ -21,14 +21,14 @@ class Tabbar extends Component {
   }
 
   render() {
-    let { children,selected } = this.props
+    let { children,selected  } = this.props
     return (
       <div className={ this.getTabbarClassName() }>
         {
           React.Children.map(children,(child,index)=>{
             if(child.type === TabBarItem){
               return React.cloneElement(child,{
-                active:selected,
+                active:selected, 
                 handler:this.onChange
               })
             }else{
@@ -49,14 +49,16 @@ class Tabbar extends Component {
 
 Tabbar.defaultProps = {  
   position: 'top',      //固定在窗口的位置，默认normal，不固定，可选 [ 'top','bottom','left','right','normal']
-  selected:'',       //默认激活选项
-  onChange:null,       // 事件 - 切换
+  selected:'',          //默认激活选项
+  onChange:null,        // 事件 - 切换
+  justify:''            // 对齐方式 可选['start','end','center'] 
 };
 
 Tabbar.propTypes = { 
   position:PropTypes.string,
   selected:PropTypes.string,
-  onChange:PropTypes.func
+  onChange:PropTypes.func,
+  justify:PropTypes.string,
 };
 
 export default Tabbar

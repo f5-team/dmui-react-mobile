@@ -4,13 +4,15 @@ import './index.css'
 
 class TagExample extends Component {
   componentDidMount = () => { }
-  handler = () => () => { }
+  handler = () => (label) => { 
+    console.log(label)
+  }
   render() {
     return (
       <div>
         <div className='demo-tag'>
           <span>黄军泉</span>
-          <Tag label='999'></Tag>
+          <Tag label='999' click={ this.handler() }></Tag>
 
         </div>
 
@@ -18,6 +20,10 @@ class TagExample extends Component {
           <p>Tag组件：可配属项：</p>
           <ul>
             <li>label: （string）提示信息</li> 
+          </ul>
+          <p>Tag组件：事件：</p>
+          <ul>
+            <li>click: 返回值 label </li> 
           </ul>
           <p>Tag组件：注意事项</p>
           <ul>

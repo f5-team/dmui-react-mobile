@@ -1,5 +1,7 @@
 .dmui-tabbar__item {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
   line-height: 1;
   color: #333;
   display: flex;
