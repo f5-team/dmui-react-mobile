@@ -31,6 +31,18 @@ const Nav = () => (
     <List>
       <a href="#/noticeBar">noticeBar</a>
     </List>
+    <List>
+      <a href="#/money">money</a>
+    </List>
+    <List>
+      <a href="#/image">image</a>
+    </List>
+    <List>
+      <a href="#/countdown">countdown 倒计时</a>
+    </List>
+    <List>
+      <a href="#/refresh">refresh 下拉刷新</a>
+    </List>
   </div>
 );
 

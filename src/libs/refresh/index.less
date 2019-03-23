@@ -1,0 +1,32 @@
+.dmui-refresh{
+    transition: transform ease-in-out;
+    position: relative;
+    .refresh-status{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        opacity: 0;
+        transition: opacity 300ms ease;
+        text-align: center;
+        font-size: 10px;
+    }
+    .iconfont{
+        color: inherit;
+        margin-right: 4px;
+    }
+    .DMUI-jiantouarrow494{
+        animation: rotate .5s ease-in infinite;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+
+}

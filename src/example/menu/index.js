@@ -8,6 +8,10 @@ import ListGroup from '../list-group/index';
 import avatar from '../avatar/index';
 import Layout from '../layout/index';
 import noticeBar from "../notice-bar/index";
+import Money from "../money/index"
+import image from "../image/index"
+import countdown from "../count-down/index"
+import refresh from "../refresh/index"
 
 //made in huangjunquan
 import Tab from '../tab/index';
@@ -29,6 +33,10 @@ const App = () => (
         <Route path="/avatar" component={avatar} />
         <Route path="/layout" component={Layout} />
         <Route path="/noticeBar" component={noticeBar} />
+        <Route path="/money" component={Money} />
+        <Route path="/image" component={image} />
+        <Route path="/countdown" component={countdown} />
+        <Route path="/refresh" component={refresh} />
 
         <Route path="/tab" component={Tab} />
         <Route path="/tabbar" component={Tabbar} />

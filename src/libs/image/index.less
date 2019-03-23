@@ -1,0 +1,38 @@
+.dmui-image{
+
+    width: 100px;
+    height: 100px;
+
+    &.round{
+        border-radius: 100%;
+    }
+    &.square{
+        border-radius: 10px;
+    }
+
+    .loading,
+    .error,
+    img{
+        border-radius: inherit;
+        height: 100%;
+        width: 100%;
+    }
+
+    .loading{
+        background: #f1f1f1;
+    }
+
+    .error{
+        background: #f8f8f8;
+        position: relative;
+        .icon-error{
+            position: absolute;
+            display: inline-block;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            transform: translate3d(-50%, -50%, 0);
+            font-size: 50px;
+        }
+    }
+}
