@@ -1,34 +1,33 @@
 import React, { Component } from 'react'
 import { Tag } from '../../libs'
-import './index.css'
+
 
 class TagExample extends Component {
   componentDidMount = () => { }
-  handler = () => (label) => { 
-    console.log(label)
+  handler = () => (label) => {
+    alert('tag的值：'+label)
   }
   render() {
     return (
       <div>
-        <div className='demo-tag'>
-          <span>黄军泉</span>
-          <Tag label='999' click={ this.handler() }></Tag>
+        <div>
+
+          <Tag label='999' onHandler={this.handler()}>
+            <span>黄军泉</span>
+          </Tag>
 
         </div>
 
-        <div  style={{ 'marginTop':'40px'}}>
+        <div style={{ 'marginTop': '40px' }}>
           <p>Tag组件：可配属项：</p>
           <ul>
-            <li>label: （string）提示信息</li> 
+            <li>label: （string）提示信息</li>
           </ul>
           <p>Tag组件：事件：</p>
           <ul>
-            <li>click: 返回值 label </li> 
+            <li>click: 返回值 label </li>
           </ul>
-          <p>Tag组件：注意事项</p>
-          <ul>
-            <li>确保父元素有position属性</li> 
-          </ul>
+           
         </div>
       </div>
     )

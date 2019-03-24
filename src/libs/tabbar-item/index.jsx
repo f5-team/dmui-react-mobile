@@ -1,11 +1,12 @@
 import React, { Component }  from 'react'
-import PropType from 'prop-types'
+import PropTypes from 'prop-types'
 import './index.css'
 
 class TabbarItem extends Component {
   componentDidMount = () =>{ }
-  handler = () => () =>{
-    this.props.handler('sdsds')
+  handler = (name,label) => () =>{
+    this.props.handler && this.props.handler(name,label)
+    this.props.onHandler && this.props.onHandler(name,label)
   }
 
   getItemClassName = () =>{
@@ -16,16 +17,33 @@ class TabbarItem extends Component {
   }
  
   render() {  
-
-    console.log('test')
-    let { children,icon ,label } = this.props
+ 
+    let { children,name,label } = this.props
     return (
-      <div onClick={ this.handler() } className = { this.getItemClassName() }>
-        <i className={ `iconfont ${icon} dmui-tabbar__icon` }></i>
-        <span className = 'dmui-tabbar__label'>{  label }</span>
+      <div onClick={ this.handler(name,label) } className = { this.getItemClassName() }>
+         {
+          (()=>{
+            if(children){
+              return children
+            }else{
+              return label
+            }
+          })()
+         }
       </div>
     )
   }
 }
 
+TabbarItem.defaultProps = {  
+  name: '',              // 标志属性
+  label:'',              // 显示属性，当且仅当子元素不存在的时候显示该值
+  onHanlder:null,        // 事件
+};
+
+TabbarItem.propTypes = { 
+  name:PropTypes.string,
+  label:PropTypes.string,
+  onChange:PropTypes.func, 
+};
 export default TabbarItem

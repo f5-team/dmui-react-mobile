@@ -4,6 +4,14 @@ import './index.css'
 import TabBarItem from '../tabbar-item';
 
 class Tabbar extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      selected:this.props.selected
+    }
+  }
+
   componentDidMount = () =>{ }
   handler = () => () =>{}
 
@@ -16,19 +24,22 @@ class Tabbar extends Component {
     return className
   }
 
-  onChange = (value) =>{
-    console.log(value)
+
+  onChange = (name,label) =>{
+    this.setState({
+      selected : name 
+    }) 
   }
 
   render() {
-    let { children,selected  } = this.props
+    let { children  } = this.props
     return (
       <div className={ this.getTabbarClassName() }>
         {
           React.Children.map(children,(child,index)=>{
             if(child.type === TabBarItem){
               return React.cloneElement(child,{
-                active:selected, 
+                active:this.state.selected, 
                 handler:this.onChange
               })
             }else{
