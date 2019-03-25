@@ -1,0 +1,29 @@
+.dmui-chequer {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.dmui-chequer__body {
+  cursor: pointer;
+}
+.dmui-ratio {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  box-sizing: inherit;
+}
+.dmui-ratio__outer {
+  padding-top: 100%;
+  position: relative;
+  box-sizing: inherit;
+}
+.dmui-ratio__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-sizing: inherit;
+}

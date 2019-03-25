@@ -17,6 +17,7 @@ import refresh from "../refresh/index"
 import Tab from '../tab/index';
 import Tabbar from '../tabbar/index';
 import Tag from '../tag/index';
+import Chequer from '../chequer/index';
 
 const App = () => (
   <div className="demo">
@@ -41,6 +42,7 @@ const App = () => (
         <Route path="/tab" component={Tab} />
         <Route path="/tabbar" component={Tabbar} />
         <Route path="/tag" component={Tag} />
+        <Route path="/chequer" component={Chequer} />
 
       </Switch>
     </HashRouter>

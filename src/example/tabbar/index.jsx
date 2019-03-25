@@ -18,14 +18,14 @@ class TabBarExample extends Component {
     console.log(key)
   }
 
-  state={
-    position:'bottom',
-    justify:'center'
+  state = {
+    position: 'bottom',
+    justify: ''
   }
-  show = (position,justify)=>()=>{
+  show = (position, justify) => () => {
     this.setState({
-      position:position,
-      justify:justify
+      position: position,
+      justify: justify
     })
   }
 
@@ -50,35 +50,50 @@ class TabBarExample extends Component {
               </Tag>
               <span className='dmui-tabbar__label'>搜索</span>
             </TabbarItem>
-            <TabbarItem name='2' label='主页' ></TabbarItem>
-            <TabbarItem name='3' label='我的' ></TabbarItem>
-            <TabbarItem name='4' label='设置' ></TabbarItem>
+            <TabbarItem name='2' label='主页' >
+
+              <i className={`iconfont DMUI-zhuye dmui-tabbar__icon`}></i>
+
+              <span className='dmui-tabbar__label'>主页</span>
+            </TabbarItem>
+            <TabbarItem name='3' label='我的' >
+
+              <i className={`iconfont DMUI-xiazai dmui-tabbar__icon`}></i>
+
+              <span className='dmui-tabbar__label'>我的</span>
+            </TabbarItem>
+            <TabbarItem name='4' label='设置' >
+
+              <i className={`iconfont DMUI-shezhi dmui-tabbar__icon`}></i>
+
+              <span className='dmui-tabbar__label'>设置</span>
+            </TabbarItem>
           </Tabbar>
         </div>
- 
+
 
         <div>
-          <button onClick={ this.show('','')}>normal</button> 
+          <button onClick={this.show('', '')}>normal</button>
 
-          <button onClick={ this.show('top','')}>top</button> 
-          <button onClick={ this.show('top','start')}>top start</button>
-          <button onClick={ this.show('top','center')}>top center</button>
-          <button onClick={ this.show('top','end')}>top end</button> 
+          <button onClick={this.show('top', '')}>top</button>
+          <button onClick={this.show('top', 'start')}>top start</button>
+          <button onClick={this.show('top', 'center')}>top center</button>
+          <button onClick={this.show('top', 'end')}>top end</button>
 
-          <button onClick={ this.show('bottom','')}>bottom</button> 
-          <button onClick={ this.show('bottom','start')}>bottom start</button>
-          <button onClick={ this.show('bottom','center')}>bottom center</button>
-          <button onClick={ this.show('bottom','end')}>bottom end</button> 
+          <button onClick={this.show('bottom', '')}>bottom</button>
+          <button onClick={this.show('bottom', 'start')}>bottom start</button>
+          <button onClick={this.show('bottom', 'center')}>bottom center</button>
+          <button onClick={this.show('bottom', 'end')}>bottom end</button>
 
-          <button onClick={ this.show('right','')}>right</button> 
-          <button onClick={ this.show('right','start')}>right start</button>
-          <button onClick={ this.show('right','center')}>right center</button>
-          <button onClick={ this.show('right','end')}>right end</button> 
+          <button onClick={this.show('right', '')}>right</button>
+          <button onClick={this.show('right', 'start')}>right start</button>
+          <button onClick={this.show('right', 'center')}>right center</button>
+          <button onClick={this.show('right', 'end')}>right end</button>
 
-          <button onClick={ this.show('left','')}>left</button> 
-          <button onClick={ this.show('left','start')}>left start</button>
-          <button onClick={ this.show('left','center')}>left center</button>
-          <button onClick={ this.show('left','end')}>left end</button> 
+          <button onClick={this.show('left', '')}>left</button>
+          <button onClick={this.show('left', 'start')}>left start</button>
+          <button onClick={this.show('left', 'center')}>left center</button>
+          <button onClick={this.show('left', 'end')}>left end</button>
         </div>
 
         <div style={{ 'marginTop': '40px' }}>
