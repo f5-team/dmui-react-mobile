@@ -19,26 +19,39 @@ class Chequer extends Component {
       flexBasis: `${100 / wrapThreshold}%`
     }
   }
+  getChequerBodyClassName = (index) => {
+    let { wrapThreshold } = this.props
+    let className = 'dmui-chequer__body dmui-ratio '
+    if( (index + 1) % wrapThreshold === 1  ){
+      className += 'is-start'
+    }else if((index + 1) % wrapThreshold === 0){
+      className += 'is-end'
+    }else{
+      className += 'is-normal'
+    }
+    return className
+  }
   render() {
     console.log(this.props)
+    let { children } = this.props;
     return (
-      <div className='dmui-chequer border-mobile--tp border-mobile--lt'>
+      <div className='dmui-chequer'>
         {
-          [0,1,2,3,4,5,6,7,8].map((item,index)=>{
-            return <div className='dmui-chequer__body dmui-ratio border-mobile--bm border-mobile--rt' style={this.getChequerBodyStyle()}>
-            <div className='dmui-ratio__outer'>
-              <div className='dmui-ratio__inner'>
-                <div >
-                  胜多负少的脚手架肯定就是四大皆空的
+          React.Children.map(children, (child, index) => {
+
+            return (
+              <div className={this.getChequerBodyClassName(index)} style={this.getChequerBodyStyle()}>
+                <div className='dmui-ratio__outer'>
+                  <div className='dmui-ratio__inner'>
+                    {
+                       child.type === ChequerItem  ? React.cloneElement(child, {}) : child
+                    }
+                  </div>
                 </div>
               </div>
-            </div> 
-          </div>
+            )
           })
         }
-
-
-
       </div>
     )
   }

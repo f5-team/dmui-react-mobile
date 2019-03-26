@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Chequer } from '../../libs'
+import { Chequer,ChequerItem } from '../../libs'
 
 
 class Example extends Component {
@@ -11,19 +11,33 @@ class Example extends Component {
     return (
       <div>
         <div>
+          <Chequer wrapThreshold = {3}>
+            <ChequerItem>
+              <div>收到收到收到收到收到收到收到收到收到收到收到收到收到收到收到</div>
+            </ChequerItem>
+            <ChequerItem>
+              <div>收到收到收到收到收到收到收到收到收到收到收到收到收到收到收到 </div>
+            </ChequerItem>
 
-          <Chequer wrapThreshold = {3}></Chequer>
+            <div>收到收到收到收到收到收到收到收到收到收到收到收到收到收到收到 </div>
+            <ChequerItem>
+              <div>大声地说</div>
+            </ChequerItem>
+            <ChequerItem>
+              <div>收到收收到收到收到收到收到收到收到收到收到收到收到收到收到收到收到到收到 </div>
+            </ChequerItem>
+
+            <div>dfdsfdfdfdfdf </div>
+
+          </Chequer>
         </div>
 
         <div style={{ 'marginTop': '40px' }}>
           <p>chequer组件：可配属项：</p>
           <ul>
-            <li>label: （string）提示信息</li>
+            <li>wrapThreshold: （number）换行阈值</li>
           </ul>
-          <p>Tag组件：事件：</p>
-          <ul>
-            <li>click: 返回值 label </li>
-          </ul>
+           
            
         </div>
       </div>

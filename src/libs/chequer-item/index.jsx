@@ -11,8 +11,11 @@ class ChequerItem extends Component {
   componentDidMount = () =>{ }
   handler = () => () =>{}
   render() {
+    let { children } = this.props 
+    console.log(children)
     return (
       <div>
+        {children}
       </div>
     )
   }

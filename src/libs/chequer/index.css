@@ -5,6 +5,18 @@
 }
 .dmui-chequer__body {
   cursor: pointer;
+  border: 1px solid red;
+  margin-bottom: -1px;
+  box-sizing: border-box;
+  z-index: 0;
+}
+.dmui-chequer__body.is-start,
+.dmui-chequer__body.is-normal {
+  margin-right: -1px;
+}
+.dmui-chequer__body:hover {
+  border: 1px solid black;
+  z-index: 1;
 }
 .dmui-ratio {
   flex-shrink: 0;
@@ -23,7 +35,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 10px;
-  box-sizing: border-box;
   box-sizing: inherit;
+  overflow: hidden;
 }

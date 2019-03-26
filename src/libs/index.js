@@ -10,3 +10,5 @@ export { default as Tag } from './tag';
 export { default as Tabbar } from './tabbar';
 export { default as TabbarItem } from './tabbar-item';
 export { default as Chequer } from './chequer';
+export { default as ChequerItem } from './chequer-item';
+export { default as Ratio } from './ratio';
