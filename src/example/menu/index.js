@@ -2,16 +2,18 @@ import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 
-import Nav from '../nav/index';
-import List from '../list/index';
-import ListGroup from '../list-group/index';
-import avatar from '../avatar/index';
-import Layout from '../layout/index';
-import noticeBar from "../notice-bar/index";
-import Money from "../money/index"
-import image from "../image/index"
-import countdown from "../count-down/index"
-import refresh from "../refresh/index"
+import asyncComponent from '../../libs/utils/AsyncComponent'
+
+const Nav = asyncComponent(() => import("../nav/index"));
+const List = asyncComponent(() => import("../list/index"));
+const ListGroup = asyncComponent(() => import("../list-group/index"));
+const avatar = asyncComponent(() => import("../avatar/index"));
+const Layout = asyncComponent(() => import("../layout/index"));
+const noticeBar = asyncComponent(() => import("../notice-bar/index"));
+const Money = asyncComponent(() => import("../money/index"));
+const image = asyncComponent(() => import("../image/index"));
+const countdown = asyncComponent(() => import("../count-down/index"));
+const refresh = asyncComponent(() => import("../refresh/index"));
 
 //made in huangjunquan
 import Tab from '../tab/index';

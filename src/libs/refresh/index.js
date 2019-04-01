@@ -2,7 +2,7 @@
  * @Author: denghuaicheng
  * @Date: 2019-03-18 16:13:52
  * @Last Modified by: denghuaicheng
- * @Last Modified time: 2019-03-22 18:21:01
+ * @Last Modified time: 2019-03-26 16:28:56
  * @summary: 下拉刷新组件
  */
 
@@ -47,6 +47,8 @@ class Refresh extends React.Component {
         }, 300))();
     }
     touchMoveFun(e){
+        e.preventDefault(); 
+
         return (throttle(()=>{
 
             //console.log(e)
@@ -66,9 +68,10 @@ class Refresh extends React.Component {
                 }
             })
 
-            this.pullingHandel()
+            this.pullingHandel();
 
-        }, 300))();
+        }, 8))();
+        
     }
     touchEndFun(e){
         return (throttle(()=>{
@@ -76,7 +79,7 @@ class Refresh extends React.Component {
             if(this.state.offsetY>= this.props.distance){
                 this.setState({
                     offsetY: this.props.distance,
-                    tranTime: 120,
+                    tranTime: 250,
                     status: 3,
                 })
                 this.refreshHandel()
